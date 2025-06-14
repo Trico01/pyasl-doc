@@ -271,6 +271,19 @@ Process your ASL data using `Oxford_ASL <https://asl-docs.readthedocs.io/en/late
 
 This function calculates CBF maps with optional structural image registration and optional M0 image calibration.
 
+**Input Parameters**:
+
+- ``root`` (str): Path to the dataset root.
+- ``useStructural`` (bool, optional): Whether to use structural images for processing. Defaults to ``False``.
+- ``useCalibration`` (bool, optional): Whether to include calibration steps. Defaults to ``False``.
+- ``cmethod`` (str, optional): Calibration method. Must be either ``"voxel"`` or ``"single"``. Defaults to ``"voxel"``.
+- ``wp`` (bool, optional): Whether to use White Paper Mode. Defaults to ``False``.
+- ``mc`` (bool, optional): Whether to apply motion correction. Defaults to ``False``.
+- ``bat`` (str, optional): Bolus arrival time.
+- ``t1`` (str, optional): T1 value of tissue.
+- ``t1b`` (str, optional): T1 value of arterial blood.
+- ``sliceband`` (str, optional): Number of slices per band in a multi-band acquisition.
+
 -----
 
 Preclinical Data Processing
